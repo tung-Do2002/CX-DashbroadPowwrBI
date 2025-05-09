@@ -1,1 +1,140 @@
+ <!DOCTYPE2 html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Lifecycle Chart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 40px;
+      background: #f8f9fb;
+    }
 
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .chart {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .section {
+      border-radius: 12px;
+      padding: 20px;
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      min-height: 150px;
+    }
+
+    .at-risk {
+      background-color: #e85d5d;
+    }
+
+    .grey-zone {
+      background-color: #e9f0f3;
+      color: #222;
+    }
+
+    .safe {
+      background-color: #2e8b7d;
+    }
+
+    .unknown {
+      background-color: #e3eaf1;
+      color: #222;
+    }
+
+    .label {
+      font-weight: bold;
+      font-size: 0.95em;
+      margin-bottom: 10px;
+      display: block;
+      color: #555;
+    }
+
+    .chart-row {
+      margin-top: 20px;
+    }
+
+    .section .value {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+    .section .sub {
+      font-size: 0.9em;
+      margin-top: 4px;
+      color: inherit;
+    }
+
+    .section .accounts {
+      margin-top: 8px;
+      font-size: 0.85em;
+      color: inherit;
+    }
+
+    .row-label {
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+      font-size: 1.1em;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Customer Lifecycle</h2>
+
+  <div class="row-label">Top 80%</div>
+  <div class="chart">
+    <div class="section at-risk">
+      <div class="value">€259.4M Total</div>
+      <div class="sub">Avg. €51.9M</div>
+      <div class="accounts">5 Accounts (4%)</div>
+    </div>
+    <div class="section grey-zone">
+      <div class="value">€502M Total</div>
+      <div class="sub">Avg. €100.4M</div>
+      <div class="accounts">5 Accounts (4%)</div>
+    </div>
+    <div class="section safe">
+      <div class="value">€1.2B Total</div>
+      <div class="sub">Avg. €97.1M</div>
+      <div class="accounts">12 Accounts (9%)</div>
+    </div>
+    <div class="section unknown">
+      <div class="value">€333.4M Total</div>
+      <div class="sub">Avg. €65.6M</div>
+      <div class="accounts">6 Accounts (5%)</div>
+    </div>
+  </div>
+
+  <div class="row-label">Bottom 20%</div>
+  <div class="chart">
+    <div class="section at-risk">
+      <div class="value">€32.6M Total</div>
+      <div class="sub">Avg. €3M</div>
+      <div class="accounts">11 Accounts (9%)</div>
+    </div>
+    <div class="section grey-zone">
+      <div class="value">€125.1M Total</div>
+      <div class="sub">Avg. €6.6M</div>
+      <div class="accounts">19 Accounts (15%)</div>
+    </div>
+    <div class="section safe">
+      <div class="value">€332.6M Total</div>
+      <div class="sub">Avg. €6.7M</div>
+      <div class="accounts">58 Accounts (45%)</div>
+    </div>
+    <div class="section unknown">
+      <div class="value">€75.4M Total</div>
+      <div class="sub">Avg. €6.3M</div>
+      <div class="accounts">12 Accounts (10%)</div>
+    </div>
+  </div>
+
+</body>
+</html>
